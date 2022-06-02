@@ -8,9 +8,10 @@
 		<version>2.7.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	<packaging>war</packaging>
 	<groupId>com.devops</groupId>
 	<artifactId>DevOpsProject</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>DevOpsProject</name>
 	<description>DevOps Assigment Project in Spring Boot</description>
 	<properties>
