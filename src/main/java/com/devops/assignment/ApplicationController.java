@@ -6,9 +6,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ApplicationController {
-@GetMapping("/controller/{value}") 
-public String getPathParamValue(@PathVariable String value) {
-	return value;
+@GetMapping(value={"/controller", "/controller/{id}"}) 
+public String getPathParamValue(@PathVariable(required = false) String id) {
+	if(id !=null) {
+	return "Value = "+ id;
+	} else {
+		return "Path value missing";
+	}
 	
 }
 }
