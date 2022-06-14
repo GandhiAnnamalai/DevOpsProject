@@ -15,4 +15,9 @@ public String getPathParamValue(@PathVariable(required = false) String id) {
 	}
 	
 }
+    @GetMapping("/messages")
+    public String getMessageUsingDocker() {
+        return "Hello from Docker!";
+    }
+
 }
